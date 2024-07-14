@@ -154,5 +154,5 @@
     // CSpellの自動フォーマット設定ファイルを有効にするかどうかを設定
     "cSpell.autoFormatConfigFile": true,
     // CSpellの診断レベルをエラーに設定
-    "cSpell.diagnosticLevel": "Error",
+    "cSpell.diagnosticLevel": "Error"
 }
