@@ -4,6 +4,9 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
+# pre-commit
+export PATH="$HOME/.pre-commit-venv/bin/pre-commit:$PATH"
+
 fpath=(/usr/local/share/zsh-completions ${fpath})
 
 autoload -U compinit && compinit -u
@@ -78,6 +81,13 @@ alias python='python3'
 alias pip='pip3'
 alias q='exit'
 alias cl='clear'
+alias ga='git add -A'
+alias gc='git commit'
+alias gpull="git fetch -p && git pull"
+alias gpush="git push origin HEAD"
+alias glog='git log --name-status -n 10'
+alias gsave='git stash save -u'
+alias gpr='!hub browse -- pulls/$(git config user.name)'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
