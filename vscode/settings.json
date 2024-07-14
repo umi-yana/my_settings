@@ -1,0 +1,158 @@
+{
+    // 自動保存の設定: 'off'、'afterDelay'、'onFocusChange'、'onWindowChange' から選択
+    "files.autoSave": "afterDelay",
+    // フォントサイズをピクセル単位で設定
+    "editor.fontSize": 14,
+    // フォントの太さを設定
+    "editor.fontWeight": "normal",
+    // フォントファミリを設定
+    "editor.fontFamily": "JetBrains Mono,monospace",
+    // フォントの合字を有効にする
+    "editor.fontLigatures": true,
+    // 行番号の表示を制御
+    "editor.lineNumbers": "on",
+    // 単語区切り文字を指定
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    // タブのサイズをスペース数で設定
+    "editor.tabSize": 4,
+    // インデントの自動検出を有効にする
+    "editor.detectIndentation": true,
+    // ミニマップの表示を無効にする
+    "editor.minimap.enabled": false,
+    // ミニマップに文字を表示するかどうかを設定
+    "editor.minimap.renderCharacters": true,
+    // クイックサジェスションの遅延時間を設定
+    "editor.quickSuggestionsDelay": 1,
+    // 他の修正候補と一緒にスニペットを表示するかどうか、およびその並び替えの方法を制御します。
+    "editor.snippetSuggestions": "bottom",
+    // 貼り付け時に自動でフォーマットするかどうかを設定
+    "editor.formatOnPaste": true,
+    // ドキュメント内の単語に基づくサジェスションを設定
+    "editor.wordBasedSuggestions": "currentDocument",
+    // エディターで選択範囲に類似する一致箇所を強調表示するかどうかを制御します
+    "editor.selectionHighlight": true,
+    // Pythonファイルのデフォルトフォーマッターを設定
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    // Pythonのフォーマッティングプロバイダーを設定
+    "python.formatting.provider": "black",
+    // カーソルの点滅スタイルを設定
+    "editor.cursorBlinking": "smooth",
+    // マウスホイールでのズームを有効にする
+    "editor.mouseWheelZoom": true,
+    // カラーカスタマイズを設定
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#FF0000", // 赤
+        "editorBracketHighlight.foreground2": "#FFBF3F", // 橙
+        "editorBracketHighlight.foreground3": "#FFFF00", // 黄
+        "editorBracketHighlight.foreground4": "#3FFF3F", // 緑
+        "editorBracketHighlight.foreground5": "#3F7FFF", // 青
+        "editorBracketHighlight.foreground6": "#FF7FFF" // 紫
+    },
+    // スタートアップエディターを無効にする
+    "workbench.startupEditor": "none",
+    // トリガー文字でサジェスションを表示するかどうかを設定
+    "editor.suggestOnTriggerCharacters": true,
+    // 選択範囲の角を丸くするかどうかを設定
+    "editor.roundedSelection": true,
+    // 現在行のハイライトを設定
+    "editor.renderLineHighlight": "all",
+    // 空白文字の表示を設定
+    "editor.renderWhitespace": "all",
+    // スムーズスクロールを有効にする
+    "editor.smoothScrolling": true,
+    // カラーテーマを設定
+    "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+    // リストのスムーズスクロールを有効にする
+    "workbench.list.smoothScrolling": true,
+    // タブを切り替える際にスクロールするかどうかを設定
+    "workbench.editor.scrollToSwitchTabs": true,
+    // ファイルが削除されたときにエディターを閉じるかどうかを設定
+    "workbench.editor.closeOnFileDelete": true,
+    // エディターのアイコン表示を有効にする
+    "workbench.editor.showIcons": true,
+    // 差分エディターでサイドバイサイド表示を有効にする
+    "diffEditor.renderSideBySide": true,
+    // 差分エディターでトリムされた空白を無視しない
+    "diffEditor.ignoreTrimWhitespace": false,
+    // 自動挿入された末尾の空白を削除する
+    "editor.trimAutoWhitespace": true,
+    // かっこを常に一致させる
+    "editor.matchBrackets": "always",
+    // ファイルとフォルダーを除外するための glob パターンを構成します。
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true
+    },
+    // ヘッダーアクションを常に表示するかどうかを設定
+    "workbench.view.alwaysShowHeaderActions": true,
+    // 開いているエディターの表示数を設定
+    "explorer.openEditors.visible": 9,
+    // カーソルのスタイルを制御します。指定できる値は 'block'、'block-outline'、'line'、'line-thin'、'underline'、'underline-thin' です
+    "editor.cursorStyle": "block",
+    // タブキーをスペースに変換するかどうかを設定
+    "editor.insertSpaces": true,
+    // 行の折り返し方法を制御します。次の値を指定できます。
+    //  - 'off' (折り返さない),
+    //  - 'on' (ビューポート折り返し),
+    //  - 'wordWrapColumn' ('editor.wordWrapColumn' で折り返し) or
+    //  - 'bounded' (ビューポートと 'editor.wordWrapColumn' の最小値で折り返し).
+    "editor.wordWrap": "off",
+    // タブ補完を有効にするかどうかを設定
+    "editor.tabCompletion": "on",
+    // Git機能を有効にするかどうかを設定
+    "git.enabled": true,
+    // Gitの自動更新を有効にするかどうかを設定
+    "git.autorefresh": true,
+    // 保存時に自動でフォーマットするかどうかを設定
+    "editor.formatOnSave": true,
+    // JSONファイルのフォーマットを有効にするかどうかを設定
+    "json.format.enable": true,
+    // 自動閉じかっこを設定
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    // 自動閉じ引用符を設定
+    "editor.autoClosingQuotes": "beforeWhitespace",
+    // 自動囲みを言語定義に従って設定
+    "editor.autoSurround": "languageDefined",
+    // かっこペアのガイドを表示するかどうかを設定
+    "editor.guides.bracketPairs": true,
+    // かっこペアの色付けを有効にするかどうかを設定
+    "editor.bracketPairColorization.enabled": true,
+    // サジェスションの選択方法を設定
+    "editor.suggestSelection": "recentlyUsed",
+    // ファイルの末尾に改行を追加するかどうかを設定
+    "files.insertFinalNewline": true,
+    // ドラッグアンドドロップを無効にするかどうかを設定
+    "editor.dragAndDrop": false,
+    // 統合ターミナルのフォントファミリを設定
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    // 単語分割ロケールを設定
+    "editor.wordSegmenterLocales": "ja",
+    // 折り返しインデントを設定
+    "editor.wrappingIndent": "indent",
+    // エンコーディングの自動推測を有効にするかどうかを設定
+    "files.autoGuessEncoding": true,
+    // Gitフェッチ時にプルーンを有効にするかどうかを設定
+    "git.pruneOnFetch": true,
+    // デフォルトのSCMビューのモードを設定
+    "scm.defaultViewMode": "tree",
+    // SCMのガターの幅を設定
+    "scm.diffDecorationsGutterWidth": 5,
+    // SCMの入力フォントファミリを設定
+    "scm.inputFontFamily": "editor",
+    // SCMの入力フォントサイズを設定
+    "scm.inputFontSize": 14,
+    // 統合ターミナルのカーソル点滅を有効にするかどうかを設定
+    "terminal.integrated.cursorBlinking": true,
+    // 末尾の空白をトリムするかどうかを設定
+    "files.trimTrailingWhitespace": true,
+    // 自動インデントを高度に設定
+    "editor.autoIndent": "advanced",
+    // プレーンテキストの強調表示を有効にするかどうかを設定
+    "better-comments.highlightPlainText": true,
+    // CSpellの自動フォーマット設定ファイルを有効にするかどうかを設定
+    "cSpell.autoFormatConfigFile": true,
+    // CSpellの診断レベルをエラーに設定
+    "cSpell.diagnosticLevel": "Error",
+}
