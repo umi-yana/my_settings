@@ -1,8 +1,12 @@
+
 #python
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
+
+# pre-commit
+export PATH="$HOME/.pre-commit-venv/bin/pre-commit:$PATH"
 
 fpath=(/usr/local/share/zsh-completions ${fpath})
 
@@ -72,12 +76,30 @@ complete -o nospace -C /opt/homebrew/Cellar/tfenv/3.0.0/versions/1.5.4/terraform
 # github CLI
 eval "$(gh completion -s zsh)"
 
+# git rebase --command
+function git-rebase-branch() {
+    # カレントブランチの最初のコミットを取得
+    first_commit=$(git rev-list --max-parents=0 HEAD)
+    # インタラクティブリベースを実行
+    git rebase -i $first_commit
+}
+
 
 # alias
 alias python='python3'
 alias pip='pip3'
 alias q='exit'
 alias cl='clear'
+alias ga='git add -A'
+alias gc='git commit'
+alias gpull="git fetch -p && git pull"
+alias gpush="git push origin HEAD"
+alias glog='git log --graph --date=short --abbrev-commit -n 10'
+alias gsave='git stash save -u'
+alias gpr='!hub browse -- pulls/$(git config user.name)'
+alias g="git"
+alias grebase='git-rebase-branch'
+alias gs='git switch'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

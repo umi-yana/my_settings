@@ -1,18 +1,45 @@
-fail_fast: true
-
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
     hooks:
-    -   id: trailing-whitespace
-    -   id: end-of-file-fixer
-    -   id: check-yaml
-    -   id: check-added-large-files
+      - id: check-docstring-first
+      - id: check-json
+      - id: check-yaml
+        args: ["--allow-multiple-documents"]
+      - id: debug-statements
+      - id: detect-private-key
+      - id: fix-encoding-pragma
+        args: ["--remove"]
+      - id: pretty-format-json
+        args: [--autofix]
 
-- repo: local
-  hooks:
-    - id: git-secrets
-      name: git secrets
-      entry: git secrets --scan
-      language: system
-      types: [text]
+  # Pythonコードのアプデ
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.16.0
+    hooks:
+      - id: pyupgrade
+
+  # コードフォーマッティングツール
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+        args: ["--line-length=99"]
+
+  # インポートソート
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        args: ["--gitignore", "--line-length=99", "--profile", "black"]
+
+  # コードの静的解析ツール
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.1.0
+    hooks:
+      - id: flake8
+        additional_dependencies: [
+          '-e', 'git+https://github.com/pycqa/pyflakes#egg=pyflakes',
+          '-e', 'git+https://github.com/pycqa/pycodestyle#egg=pycodestyle',
+        ]
+        args: ["--max-line-length=99"]

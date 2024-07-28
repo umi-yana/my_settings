@@ -1,12 +1,12 @@
-=> Formulae
-act                     gettext                 jansson                 libtasn1                npth                    pre-commit              tree-sitter
-autoconf                gh                      libassuan               libunistring            openldap                pyenv                   unbound
-awscli                  git                     libevent                libusb                  openssl@3               readline                xz
-ca-certificates         git-secrets             libgcrypt               libyaml                 p11-kit                 sqlite                  zsh-autosuggestions
-cask                    gmp                     libgpg-error            m4                      pcre2                   tfenv                   zsh-completions
-coreutils               gnupg                   libidn2                 mas                     pinentry                tflint                  zsh-syntax-highlighting
-direnv                  gnutls                  libksba                 mpdecimal               pkg-config              tfsec
-emacs                   grep                    libnghttp2              nettle                  powerlevel10k           tree
+==> Formulae
+act                     gettext                 jansson                 libtasn1                npth                    pre-commit              tree
+autoconf                gh                      libassuan               libunistring            openldap                pyenv                   tree-sitter
+awscli                  git                     libevent                libusb                  openssl@3               python@3.12             unbound
+ca-certificates         git-secrets             libgcrypt               libyaml                 p11-kit                 readline                xz
+cask                    gmp                     libgpg-error            m4                      pcre2                   sqlite                  zsh-autosuggestions
+coreutils               gnupg                   libidn2                 mas                     pinentry                tfenv                   zsh-completions
+direnv                  gnutls                  libksba                 mpdecimal               pkg-config              tflint                  zsh-syntax-highlighting
+emacs                   grep                    libnghttp2              nettle                  powerlevel10k           tfsec
 
 ==> Casks
 1password                       docker                          keyboardcleantool               runcat-plugins-manager          visual-studio-code

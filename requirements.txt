@@ -1,0 +1,5 @@
+# https://pypi.org/project/pandas/
+pandas==2.2.2
+requests==2.32.3
+flake8==7.1.0
+pre-commit==3.7.1
