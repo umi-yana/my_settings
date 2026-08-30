@@ -1,0 +1,64 @@
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Mac App Store command-line interface
+brew "mas"
+# Python version management
+brew "pyenv"
+# Fast, configurable, shell plugin manager
+brew "sheldon"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Desktop password and login vault
+cask "bitwarden"
+# Clipboard extension app
+cask "clipy"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
+# Web browser
+cask "google-chrome"
+# Software for Logitech devices
+cask "logi-options+"
+# Team communication and collaboration software
+cask "slack"
+# Music streaming service
+cask "spotify"
+# Open-source code editor
+cask "visual-studio-code"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
+# Video communication and virtual meeting platform
+cask "zoom"
+mas "LINE", id: 539883307
+vscode "aaron-bond.better-comments"
+vscode "docker.docker"
+vscode "donjayamanne.python-environment-manager"
+vscode "donjayamanne.python-extension-pack"
+vscode "dracula-theme.theme-dracula"
+vscode "eamodio.gitlens"
+vscode "kevinrose.vsc-python-indent"
+vscode "monokai.theme-monokai-pro-vscode"
+vscode "mosapride.zenkaku"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-ceintl.vscode-language-pack-ja"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "njpwerner.autodocstring"
+vscode "oderwat.indent-rainbow"
+vscode "samuelcolvin.jinjahtml"
+vscode "shardulm94.trailing-spaces"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "vscode-icons-team.vscode-icons"
+vscode "wholroyd.jinja"
+vscode "yzhang.markdown-all-in-one"
