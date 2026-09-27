@@ -95,7 +95,8 @@ alias gs='git switch'
 # homebrewの更新・削除・クリーンアップをまとめて行なう
 alias brewu='brew upgrade && brew autoremove && brew cleanup -s'
 # 天気予報
-alias wttr='(){ curl -H "Accept-Language: ${LANG%_*}" --compressed "wttr.in/${1:-Tokyo}" }'
+alias wt='(){ curl -H "Accept-Language: ${LANG%_*}" --compressed "wttr.in/${1:-Tokyo}" }'
+alias dokerdelete='docker system prune -a --volumes'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
